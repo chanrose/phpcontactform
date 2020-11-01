@@ -437,7 +437,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label for="form_emerPhone">Emergency Contact Phone Number *</label>
-                            <input id="form_emerPhone" type="email" name="emerPhone" class="form-control noRadius"
+                            <input id="form_emerPhone" type="tel" name="emerPhone" class="form-control noRadius"
                                    placeholder="Please enter your emergency contact phone number *" required="required"
                                    data-error="Valid phone number is required.">
                             <div class="help-block with-errors"></div>
@@ -458,10 +458,10 @@
                             <label for="form_school">1. Select School / Faculty from the List *</label>
                             <select id="form_school" name="school" class="form-control noRadius" required="required"
                                     data-error="Please specify your school or faculty.">
-                                <option value="">School of Management and Economics</option>
-                                <option value="Request quotation">School of Information Technology</option>
-                                <option value="Request order status">School of Arts</option>
-                                <option value="Request copy of an invoice">School of Engineer</option>
+                                <option value="School of Management and Economics">School of Management and Economics</option>
+                                <option value="School of Information Technology">School of Information Technology</option>
+                                <option value="School of Arts">School of Arts</option>
+                                <option value="School of Engineer">School of Engineer</option>
                                 <option value="Other">Other</option>
                             </select>
                             <div class="help-block with-errors"></div>
@@ -474,10 +474,10 @@
                             <label for="form_degree">2. Select One Programs from School of Management and Economics *</label>
                             <select id="form_degree" name="degree" class="form-control noRadius" required="required"
                                     data-error="Please specify your degree.">
-                                <option value="">Marketing</option>
-                                <option value="Request quotation">Information Technology</option>
-                                <option value="Request order status">Management</option>
-                                <option value="Request copy of an invoice">Nursing</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Management">Management</option>
+                                <option value="Nursing">Nursing</option>
                                 <option value="Other">Other</option>
                             </select>
                             <div class="help-block with-errors"></div>
@@ -487,23 +487,23 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="">Transcript / Diploma *</label>
+                            <label for="transcriptFile">Transcript / Diploma *</label>
                             <p>up to 5 files</p>
-                            <input class="btn btn-danger noRadius" type="button" value="Select Files">
+                            <input class="btn btn-danger noRadius" type="button" value="transcriptFile" id="transcriptFile">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="">Passport / Thai Citizen ID / House Registration *</label>
+                            <label for="passportFile">Passport / Thai Citizen ID / House Registration *</label>
                             <p>up to 5 files</p>
-                            <input class="btn btn-danger noRadius" type="button" value="Select Files">
+                            <input class="btn btn-danger noRadius" type="button" value="passportFile" id="passportFile">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <div class="g-recaptcha" data-sitekey="6Ldx090ZAAAAAOcnW3VBdcPsE5CFF2zB7l0B0VH2" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
                             <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
                             <div class="help-block with-errors"></div>
                         </div>
