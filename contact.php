@@ -62,7 +62,7 @@ try {
                 $emailText .= "$fields[$key]: $value\n";
             }
         }
-        $emailText = "\n============================================================\n";
+        $emailText .= "\n============================================================\n";
     
         // All the neccessary headers for the email.
         $headers = array('Content-Type: text/plain; charset="UTF-8";',

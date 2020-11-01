@@ -370,7 +370,7 @@
             <div class="divider-custom-line"></div>
         </div>
         <!-- Contact Section Content-->
-        <form id="contact-form" method="post" action="contact.php" role="form">
+        <form id="contact-form" method="post" action="contact.php" enctype="multipart/form-data" role="form">
 
             <div class="messages"></div>
 
@@ -490,6 +490,7 @@
                             <label for="transcriptFile">Transcript / Diploma *</label>
                             <p>up to 5 files</p>
                             <input class="btn btn-danger noRadius" type="button" value="transcriptFile" id="transcriptFile">
+
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -510,7 +511,7 @@
 
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" class="btn btn-success btn-send noRadius" value="Send message">
+                        <input type="submit" class="btn btn-success btn-send noRadius" name="submit" value="Submit">
                     </div>
                 </div>
                 <div class="row">
