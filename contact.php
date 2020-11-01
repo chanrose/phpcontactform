@@ -7,7 +7,7 @@ require('recaptcha-master/src/autoload.php');
 $from = $_POST['email'];
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'broset777@lifedashboard.cloud';
+$sendTo = 'yourPersonalEmailDomain';
 
 // subject of the email
 $subject = 'New message to '.$_POST['school'];
@@ -23,7 +23,7 @@ $okMessage = 'Contact form successfully submitted. Thank you, I will get back to
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
 // ReCaptch Secret
-$recaptchaSecret = '6Ldx090ZAAAAANNahWINL8inIFpcKUeh86pCgDTv';
+$recaptchaSecret = 'secretKeys';
 
 // let's do the sending
 
