@@ -489,7 +489,9 @@
                         <div class="form-group">
                             <label for="transcriptFile">Transcript / Diploma *</label>
                             <p>up to 5 files</p>
-                            <input class="btn btn-danger noRadius" type="button" value="transcriptFile" id="transcriptFile">
+                            <input type="file" name="transcriptFile[]" id="transcriptFile" hidden multiple/>
+                            <label class="btn btn-danger noRadius" for="transcriptFile">Upload Transcript</label>
+
 
                         </div>
                     </div>
@@ -497,11 +499,12 @@
                         <div class="form-group">
                             <label for="passportFile">Passport / Thai Citizen ID / House Registration *</label>
                             <p>up to 5 files</p>
-                            <input class="btn btn-danger noRadius" type="button" value="passportFile" id="passportFile">
+                            <input type="file" name="passportFile[]" id="passportFile" hidden multiple/>
+                            <label class="btn btn-danger noRadius" for="passportFile">Upload Passport</label>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+               <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <div class="g-recaptcha" data-sitekey="6Ldx090ZAAAAAOcnW3VBdcPsE5CFF2zB7l0B0VH2" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
@@ -510,6 +513,7 @@
                         </div>
 
                     </div>
+
                     <div class="col-md-12">
                         <input type="submit" class="btn btn-success btn-send noRadius" name="submit" value="Submit">
                     </div>
