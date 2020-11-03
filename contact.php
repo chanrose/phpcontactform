@@ -1,7 +1,7 @@
 <?php
 // require ReCaptcha class
 require('recaptcha-master/src/autoload.php');
-
+include('uploadMOOP.php');
 // configure
 // an email address that will be in the From field of the email.
 $from = $_POST['email'];
@@ -25,6 +25,16 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 // ReCaptch Secret
 $recaptchaSecret = 'yourGooglesecretkeys';
 
+
+// Uploading passport and Transcript
+$transcriptFile = new uploadMOOP();
+$transcriptFile->setValue("uploads/", 'transcriptFile');
+echo $transcriptFile->processUpload();
+
+$passportFile = new uploadMOOP();
+$passportFile->setValue("uploads/", 'passportFile');
+echo $checkStatus = $passportFile->processUpload();
+
 // let's do the sending
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
@@ -35,7 +45,7 @@ try {
 
         // validate the ReCaptcha, if something is wrong, we throw an Exception,
         // i.e. code stops executing and goes to catch() block
-        
+
         if (!isset($_POST['g-recaptcha-response'])) {
             throw new \Exception('ReCaptcha is not set.');
         }
@@ -51,7 +61,7 @@ try {
         if (!$response->isSuccess()) {
             throw new \Exception('ReCaptcha was not validated.');
         }
-        
+
         // everything went well, we can compose the message, as usually
         
         $emailText = "\n============================================================\n";

@@ -1,6 +1,4 @@
 <?php
-require('recaptcha-master/src/autoload.php');
-
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["transcriptFile"]["name"]);
 $uploadOk = 1;

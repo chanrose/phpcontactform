@@ -24,9 +24,3 @@ label {
 .noRadius {
     border-radius: 0 !important;
 }
-
-.inputFile {
-    opacity: 0;
-    width: 20px;
-
-}
